@@ -1,0 +1,9 @@
+<div>
+  <h2>Sorting Visualization</h2>
+  <svg width="500" height="200">
+    <g *ngFor="let value of array; let i = index">
+      <rect [attr.x]="i * 50" [attr.y]="200 - value" width="40" [attr.height]="value" fill="blue"></rect>
+    </g>
+  </svg>
+  <button (click)="animateMergeSort()">Start Sorting</button>
+</div>
